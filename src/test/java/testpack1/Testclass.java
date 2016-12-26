@@ -14,7 +14,7 @@ public class Testclass {
 	public void wordpressrun() {
 	
       driver =new FirefoxDriver();
-      driver.get("https://wordpress.com/");
+      driver.getee("https://wordpress.com/");
       driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
       driver.findElement(By.xpath("//a[@title='Get Started']")).click();
