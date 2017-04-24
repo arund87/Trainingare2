@@ -16,9 +16,9 @@ public class Testclass {
       driver =new FirefoxDriver();
       driver.get("https://wordpress.com/");
       driver.manage().window().maximize();
-      driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
       driver.findElement(By.xpath("//a[@title='Get Started']")).click();
-      driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
       driver.quit();
 	}
 
